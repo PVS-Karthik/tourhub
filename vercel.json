@@ -1,11 +1,8 @@
 {
   "version": 2,
   "rewrites": [
-    { "source": "/css/:path*", "destination": "/frontend/css/:path*" },
-    { "source": "/js/:path*", "destination": "/frontend/js/:path*" },
-    { "source": "/images/:path*", "destination": "/frontend/images/:path*" },
-    { "source": "/", "destination": "/frontend/index.html" },
-    { "source": "/index.html", "destination": "/frontend/index.html" },
-    { "source": "/state.html", "destination": "/frontend/state.html" }
+    { "source": "/css/(.*)", "destination": "/css/$1" },
+    { "source": "/js/(.*)", "destination": "/js/$1" },
+    { "source": "/", "destination": "/index.html" }
   ]
 }

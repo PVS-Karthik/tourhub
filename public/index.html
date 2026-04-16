@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TourHub - Explore India</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">TourHub</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#" onclick="showSeasonFilter()">Filter by Season</a>
+    </div>
+  </nav>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search state or place...">
+    <button onclick="searchPlaces()">Search</button>
+  </div>
+
+  <div id="seasonFilter" class="season-filter" style="display: none;">
+    <h3>Select Season</h3>
+    <button onclick="filterBySeason('summer')">Summer</button>
+    <button onclick="filterBySeason('winter')">Winter</button>
+    <button onclick="filterBySeason('monsoon')">Monsoon</button>
+    <button onclick="clearFilter()">Clear</button>
+  </div>
+
+  <div id="statesGrid" class="states-grid"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
